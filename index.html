@@ -1,21 +1,278 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>D.Dots</title>
-        <link rel="shortcut icon" href="./assets/img/svg/page-logo.svg" type="image/x-icon">
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link rel="shortcut icon" href="./assets/img/svg/page-logo.svg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
+    <header
+        class="d-flex  min-vh-100 bg-black-1 justify-content-center align-items-center flex-column position-relative">
+        <div class="d-flex mt-3 gap-50">
+            <nav class="d-md-block bg-black sidebar w-100px w-md-25">
+                <a href="#" target="_blank">
+                    <img class="w-10" src="./assets/img/svg/page-logo.svg" alt="Page Logo">
+                </a>
+                <ul class="nav flex-column mt-4 gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none font-family-primary fw-normal text-md lh-160 text-white active vertical-text"
+                            href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none font-family-primary fw-normal text-md lh-160 text-white vertical-text"
+                            href="#">Update</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none font-family-primary fw-normal text-md lh-160 text-white vertical-text"
+                            href="#">Our Why</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none font-family-primary fw-normal text-md lh-160 text-white vertical-text"
+                            href="#">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none font-family-primary fw-normal text-md lh-160 text-white vertical-text"
+                            href="#">How It Works</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="container max-w-1140 ">
+                <div class="position-relative z-3 d-inline-block">
+                    <img class=" w-100 max-w-1140 layer" src="./assets/img/png/bg-hero.png" alt="layer">
+                    <img class="hero-logo w-100 max-w-849 z-3 position-absolute top-50 start-50 translate-middle"
+                        src="./assets/img/png/hero-logo.png" alt="logo">
+                </div>
+            </div>
+            <div class="d-flex flex-column gap-32 w-100px">
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="circle d-flex justify-content-center align-items-center">
+                        <a href="#" target="_blank" class="d-flex align-items-center justify-content-center">
+                            <svg width="20" height="18" viewBox="0 0 20 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M15.7512 0H18.818L12.1179 7.62462L20 18H13.8275L8.99365 11.7074L3.46266 18H0.394011L7.56038 9.84461L0 0H6.32735L10.6967 5.75169L15.7493 0H15.7512ZM14.6748 16.1723H16.3742L5.4049 1.73169H3.58133L14.6748 16.1723Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="circle d-flex justify-content-center align-items-center">
+                        <a href="#" target="_blank" class="d-flex align-items-center justify-content-center">
+                            <svg width="22" height="17" viewBox="0 0 22 17" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.003 0C14.747 0 15.533 0.26 16.253 0.547L16.78 0.763C18.04 1.291 18.748 2.399 19.297 3.616C20.188 5.591 20.807 8.224 21.021 10.226C21.123 11.176 21.148 12.132 20.965 12.775C20.768 13.462 20.098 13.948 19.447 14.33L19.125 14.513L18.791 14.699C18.619 14.795 18.442 14.89 18.266 14.983L17.744 15.253L17.027 15.61L16.45 15.894C16.3321 15.9576 16.2027 15.9968 16.0694 16.0094C15.936 16.022 15.8015 16.0077 15.6738 15.9673C15.5462 15.9269 15.4279 15.8613 15.326 15.7743C15.2242 15.6874 15.1408 15.5808 15.0809 15.461C15.0211 15.3413 14.9858 15.2107 14.9774 15.077C14.9689 14.9433 14.9874 14.8094 15.0317 14.683C15.076 14.5566 15.1452 14.4404 15.2353 14.3413C15.3254 14.2422 15.4344 14.1622 15.556 14.106L16.346 13.716L15.766 13.107C14.376 13.677 12.739 14 11 14C9.26101 14 7.62401 13.678 6.23401 13.107L5.65401 13.715L6.44701 14.105C6.56455 14.1637 6.66937 14.245 6.75549 14.3442C6.84161 14.4434 6.90735 14.5586 6.94895 14.6832C6.99055 14.8078 7.0072 14.9394 6.99795 15.0705C6.98869 15.2015 6.95372 15.3295 6.89501 15.447C6.83631 15.5645 6.75504 15.6694 6.65583 15.7555C6.55662 15.8416 6.44141 15.9073 6.3168 15.9489C6.06512 16.033 5.79038 16.0136 5.55301 15.895L5.00901 15.625C4.60701 15.425 4.20401 15.227 3.80601 15.018L2.87801 14.513L2.55701 14.33C1.90601 13.948 1.23501 13.462 1.03901 12.775C0.855014 12.132 0.881014 11.177 0.982014 10.225C1.19601 8.224 1.81501 5.591 2.70601 3.616C3.25501 2.399 3.96301 1.291 5.22301 0.763C6.05901 0.413 7.07201 0 8.00001 0C8.60301 0 9.07701 0.555 8.99001 1.147C9.65548 1.04854 10.3273 0.999404 11 1C11.691 1 12.366 1.05 13.014 1.148C12.9947 1.00599 13.0059 0.861504 13.0466 0.724109C13.0874 0.586714 13.1568 0.459542 13.2504 0.351012C13.344 0.242481 13.4596 0.155067 13.5895 0.0945554C13.7194 0.0340434 13.8597 0.00181393 14.003 0ZM7.75001 6.5C7.28589 6.5 6.84077 6.68437 6.51258 7.01256C6.18439 7.34075 6.00001 7.78587 6.00001 8.25C6.00001 8.71413 6.18439 9.15925 6.51258 9.48744C6.84077 9.81563 7.28589 10 7.75001 10C8.21414 10 8.65926 9.81563 8.98745 9.48744C9.31564 9.15925 9.50001 8.71413 9.50001 8.25C9.50001 7.78587 9.31564 7.34075 8.98745 7.01256C8.65926 6.68437 8.21414 6.5 7.75001 6.5ZM14.25 6.5C13.7859 6.5 13.3408 6.68437 13.0126 7.01256C12.6844 7.34075 12.5 7.78587 12.5 8.25C12.5 8.71413 12.6844 9.15925 13.0126 9.48744C13.3408 9.81563 13.7859 10 14.25 10C14.7141 10 15.1593 9.81563 15.4875 9.48744C15.8156 9.15925 16 8.71413 16 8.25C16 7.78587 15.8156 7.34075 15.4875 7.01256C15.1593 6.68437 14.7141 6.5 14.25 6.5Z"
+                                    fill="white" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center align-items-center">
+                    <div class="circle d-flex justify-content-center align-items-center">
+                        <a href="#" target="_blank" class="d-flex align-items-center justify-content-center">
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M14.2656 3.13672C14.2656 5.65899 14.2699 5.73203 14.4718 5.83945C14.532 5.87383 15.3312 5.88672 16.9898 5.88672H18.9218C19.198 5.88672 19.4218 6.11058 19.4218 6.38672V12.4609V18.5352C19.4218 18.8113 19.198 19.0352 18.9218 19.0352H12.0957H5.26948C4.99334 19.0352 4.76948 18.8113 4.76948 18.5352V9.9043V1.27344C4.76948 0.997295 4.99334 0.773438 5.26948 0.773438H9.51753H13.7656C14.0417 0.773438 14.2656 0.997295 14.2656 1.27344V3.13672Z"
+                                    fill="white" />
+                                <path
+                                    d="M4.00464 10.9184L4.01729 19.4439C4.01744 19.5445 4.06146 19.64 4.13784 19.7055C4.21548 19.772 4.31436 19.8086 4.41662 19.8086H10.7464H16.7304C17.0066 19.8086 17.2304 20.0325 17.2304 20.3086V20.5176V20.7266C17.2304 21.0027 17.0066 21.2266 16.7304 21.2266H9.90425H3.07808C2.80193 21.2266 2.57808 21.0027 2.57808 20.7266V11.7305V2.73438C2.57808 2.45823 2.80193 2.23438 3.07808 2.23438H3.28706H3.49654C3.77249 2.23438 3.99627 2.45793 3.99654 2.73388L4.00464 10.9184Z"
+                                    fill="white" />
+                                <path
+                                    d="M16.9511 3.22266L17.9882 4.25973C18.3032 4.57471 18.0801 5.11328 17.6346 5.11328H16.9382H15.539C15.2629 5.11328 15.039 4.88942 15.039 4.61328V3.22266C15.039 2.18281 15.0433 1.33203 15.0519 1.33203C15.0562 1.33203 15.9113 2.18281 16.9511 3.22266Z"
+                                    fill="white" />
+                                <path
+                                    d="M6.48828 3.2957C6.45391 3.30859 6.38086 3.36015 6.3293 3.40742C6.23047 3.49336 6.23047 3.50195 6.23047 4.76953V6.0457L6.34219 6.14883C6.45391 6.25195 6.45391 6.25195 7.58398 6.26484C8.32305 6.27344 8.77852 6.26055 8.89453 6.23047C9.18242 6.15312 9.19531 6.08437 9.19531 4.74805C9.19531 3.48047 9.18242 3.39883 8.9332 3.31289C8.79141 3.26562 6.61719 3.24844 6.48828 3.2957ZM8.42188 4.76953V5.5H7.71289H7.00391V4.76953V4.03906H7.71289H8.42188V4.76953Z"
+                                    fill="white" />
+                                <path
+                                    d="M6.33796 7.06835C6.18757 7.21445 6.19187 7.46796 6.34226 7.60976C6.44109 7.69999 6.49695 7.71288 6.86648 7.73007C7.40359 7.74726 7.59265 7.6914 7.67429 7.49374C7.74734 7.32187 7.72156 7.19726 7.59265 7.05546C7.51101 6.96523 7.46804 6.96093 6.9739 6.96093C6.46687 6.96093 6.43679 6.96523 6.33796 7.06835Z"
+                                    fill="white" />
+                                <path
+                                    d="M8.52925 7.06836C8.38746 7.20586 8.38746 7.4293 8.52496 7.59258L8.62808 7.71289L13.0925 7.72578C16.2765 7.73438 17.6 7.72578 17.716 7.69141C17.9953 7.60977 18.0683 7.2875 17.8621 7.05547L17.7761 6.96094H13.2043H8.63238L8.52925 7.06836Z"
+                                    fill="white" />
+                                <path
+                                    d="M6.33789 9.25977C6.26055 9.33281 6.23047 9.41016 6.23047 9.52617C6.23477 9.84414 6.38086 9.92578 6.96094 9.92578C7.45508 9.92578 7.61406 9.86992 7.68281 9.67656C7.74297 9.50469 7.7 9.33711 7.57109 9.23828C7.48086 9.16523 7.39922 9.15234 6.95234 9.15234C6.4668 9.15234 6.43672 9.15664 6.33789 9.25977Z"
+                                    fill="white" />
+                                <path
+                                    d="M8.5335 9.26407C8.37881 9.41876 8.37881 9.65508 8.5335 9.80118L8.64521 9.9043L13.1397 9.91719C16.5386 9.92579 17.6687 9.9129 17.7632 9.87423C18.0038 9.7754 18.0511 9.40157 17.8405 9.23829C17.7374 9.15235 17.6515 9.15235 13.1913 9.15235H8.64951L8.5335 9.26407Z"
+                                    fill="white" />
+                                <path
+                                    d="M6.42374 11.3953C6.196 11.5199 6.15303 11.8336 6.3421 12.0098C6.44952 12.1129 6.48819 12.1172 6.96085 12.1172C7.52374 12.1172 7.65694 12.0656 7.70421 11.8293C7.73428 11.6617 7.63116 11.4383 7.49796 11.3867C7.34756 11.3309 6.53116 11.3352 6.42374 11.3953Z"
+                                    fill="white" />
+                                <path
+                                    d="M8.61529 11.3953C8.38755 11.5242 8.34888 11.8207 8.53365 12.0055L8.64966 12.1172H13.1786C16.3411 12.1172 17.7333 12.1043 17.7977 12.0699C17.9309 11.9969 18.0126 11.7648 17.9567 11.6059C17.8579 11.3309 18.1114 11.3438 13.1829 11.3438C9.89146 11.348 8.67974 11.3609 8.61529 11.3953Z"
+                                    fill="white" />
+                                <path
+                                    d="M6.44961 13.5824C6.29922 13.6426 6.23477 13.75 6.23047 13.9348C6.23047 14.0508 6.26055 14.1281 6.33789 14.2012C6.43672 14.3043 6.4668 14.3086 6.97383 14.3086C7.46797 14.3086 7.51094 14.3043 7.59258 14.2098C7.71719 14.0723 7.74297 13.9691 7.68711 13.8059C7.61836 13.5953 7.44648 13.5352 6.95234 13.5395C6.7332 13.5395 6.50547 13.5609 6.44961 13.5824Z"
+                                    fill="white" />
+                                <path
+                                    d="M8.6796 13.5652C8.41319 13.6641 8.33155 14.0078 8.5292 14.2012L8.63233 14.3086H13.1827C17.6515 14.3086 17.7374 14.3086 17.8405 14.2227C18.064 14.0508 18.0038 13.6727 17.746 13.5824C17.6429 13.548 16.3753 13.5352 13.1741 13.5395C10.7378 13.5395 8.71397 13.5523 8.6796 13.5652Z"
+                                    fill="white" />
+                                <path
+                                    d="M6.50978 15.7566C6.23478 15.8297 6.12736 16.2164 6.32931 16.4055C6.41954 16.4914 6.4754 16.5 6.96525 16.5C7.48517 16.5 7.50665 16.4957 7.60548 16.3926C7.75158 16.2379 7.74298 16.0187 7.59259 15.8641C7.48517 15.7566 7.45079 15.748 7.03829 15.7395C6.79337 15.7352 6.55704 15.7437 6.50978 15.7566Z"
+                                    fill="white" />
+                                <path
+                                    d="M8.69261 15.7566C8.4391 15.8082 8.33597 16.2035 8.52933 16.3926L8.63246 16.5H13.2043H17.7762L17.8707 16.3969C18.0125 16.2465 18.0039 16.0102 17.8578 15.8598L17.7461 15.748L13.2645 15.7438C10.8024 15.7395 8.74417 15.748 8.69261 15.7566Z"
+                                    fill="white" />
+                            </svg>
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- dots -->
+    <section class="d-flex justify-content-center position-relative align-items-center bg-blue h-100">
+        <div class="container max-w-1140">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <h2 class="font-family-primary fw-bold text-xl mb-16  lh-100 color-white">About Us</h2>
+                    <h3 class="font-family-primary fw-medium text-md lh-100 mb-12 color-white">Mission</h3>
+                    <p class="font-family-primary fw-normal fs-6 lh-160 color-white mb-32 opacity-70 max-w-477">D.Dots
+                        champions the fundamental right to privacy in the digital realm, ensuring thatpersonal
+                        data remains personal. We're committed to innovating secure solutions thatempower individuals to
+                        control their digital footprint.</p>
+                    <h3 class="font-family-primary fw-medium text-md lh-100 color-white mb-12">Vision</h3>
+                    <p class="font-family-primary fw-normal fs-6 lh-160 color-white opacity-70 max-w-477">Our vision
+                        extends beyond safeguarding individual data to shaping a world where privacyand
+                        progress coexist harmoniously. We envision a future where technology respectspersonal boundaries
+                        and fosters a collective intelligence that is both insightful andunintrusive.</p>
+
+                </div>
+                <div class="col-12 col-md-6">
+                    <img class="w-100 max-w-461" src="./assets/img/png/dots.png" alt="dots">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- brand -->
+    <section class="d-flex justify-content-center align-items-center bg-brand min-vh-100">
+        <div class="container max-w-1140">
+            <div class="d-flex flex-column text-center justify-content-center align-items-center">
+                <h2 class="font-family-primary lh-100 text-lg mb-16 fw-semibold color-white">Brand Story</h2>
+                <p class="font-family-primary lh-160 fs-6 fw-normal max-w-632 color-white opacity-70">D.Dots is a
+                    vanguard of privacy, where every technological stride enhances individualfreedom. Our story
+                    intertwines with the relentless pursuit of a society that values andprotects the sanctity of
+                    personal
+                    data.</p>
+            </div>
+        </div>
+
+    </section>
+    <!-- benifit -->
+    <section class="d-flex justify-content-center bg-benifit align-items-center min-vh-100">
+        <div class="container max-w-1140 text-center">
+            <h2 class="font-family-primary mb-5 fw-bold text-xl lh-100 color-white pt-5">Application & Benefits</h2>
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-6 mb-4">
+                    <h3 class="font-family-primary fw-medium text-md lh-100 color-white mb-3">Financial Sector</h3>
+                    <p class="font-family-primary fw-normal fs-6 lh-160 opacity-70 color-white mx-auto"
+                        style="max-width: 398px;">
+                        Lorem ipsum dolor sit amet consectetur. Id mollis donec eget netus vestibulum gravida. Malesuada
+                        consectetur vestibulum maecenas amet ac fringilla.
+                    </p>
+                </div>
+                <div class="col-12 col-md-6 mb-4">
+                    <h3 class="font-family-primary fw-medium text-md lh-100 color-white mb-3">Hypothetical Scenarios
+                    </h3>
+                    <p class="font-family-primary fw-normal fs-6 lh-160 opacity-70 color-white mx-auto"
+                        style="max-width: 398px;">
+                        Lorem ipsum dolor sit amet consectetur. Id mollis donec eget netus vestibulum gravida. Malesuada
+                        consectetur vestibulum maecenas amet ac fringilla.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- print -->
+    <section class="d-flx justify-content-center position-relative bg-white align-items-center min-vh-100">
+        <div class="container max-w-1140 ">
+            <img class="position-absolute print-1 w-100  max-w-422" src="./assets/img/png/print-1.png" alt="print"><img
+                class="position-absolute print-2 w-100 max-w-781  d-md-block start-50 translate-middle-x"
+                src="./assets/img/png/print-2.png" alt="print">
+
+            <img class="position-absolute print-3 w-100  max-w-422" src="./assets/img/png/print-3.png" alt="print">
+        </div>
+    </section>
+    <!-- footer -->
+    <footer class="bg-blue min-h-100 d-flex flex-column justify-content-center align-items-center">
+        <div class="continer max-w-1140 mt-72 container">
+            <div class="row">
+                <div class="col-12 col-md-5 mb-4 mb-md-0 text-center text-md-start">
+                    <a href="#" target="_blank"><img src="./assets/img/svg/page-logo.svg" alt="footer-layer-l"></a>
+                    <p class="font-family-primary fs-6 color-white lh-160 mt-16 fw-normal max-w-354 color-white">
+                        D.Dots®: Pioneering Privacy in a Connected World<br>- Where Security Meets Freedom.
+                    </p>
+                </div>
+
+                <!-- Spacer column hidden on small screens -->
+                <div class="d-none d-md-block col-md-2"></div>
+
+                <div class="col-12 col-md-2 mb-4 mb-md-0 text-center text-md-start">
+                    <h6 class="fw-normal fs-6 lh-160 color-white mb-16">Links</h6>
+                    <ul class="list-unstyled">
+                        <li><a href="#"
+                                class="fw-normal text-sm lh-160 mb-12 color-white text-decoration-none d-block">Home</a>
+                        </li>
+                        <li><a href="#"
+                                class="fw-normal text-sm lh-160 color-white mb-12 text-decoration-none opacity-70 d-block">About
+                                Us</a></li>
+                        <li><a href="#"
+                                class="fw-normal text-sm lh-160 color-white mb-12 text-decoration-none opacity-70 d-block">Services</a>
+                        </li>
+                        <li><a href="#"
+                                class="fw-normal text-sm lh-160 color-white text-decoration-none opacity-70 d-block">Blog</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-12 col-md-3 text-center text-md-start">
+                    <h6 class="fw-normal fs-6 lh-160 color-white mb-16">Contact Us</h6>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#"
+                                class="fw-normal d-flex justify-content-center justify-content-md-start align-items-center mb-12 gap-12 text-sm lh-160 color-white text-decoration-none">
+                                <img src="./assets/img/svg/msg.svg" alt="msg">support@ddotslab.com
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#"
+                                class="fw-normal d-flex justify-content-center justify-content-md-start gap-12 align-items-center mb-12 text-sm lh-160 color-white text-decoration-none">
+                                <img src="./assets/img/svg/location.svg" alt="location">210 Rockview, Irvine, CA 92612
+                            </a>
+                        </li>
+                    </ul>
+                    <button
+                        class="button color-red border-0 color-white-1 font-family-primary flex-wrap lh-160 fs-6 mt-3">Donate</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-line w-100 bg-white opacity-70 mt-40 mb-12"></div>
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center w-100 px-3 mb-3 gap-2">
+            <p class="font-family-primary fw-normal fs-6 lh-160 color-white opacity-70 text-center text-md-start m-0">
+                Copyright © 2023 D.Dots, All Right Reserved
+            </p>
+            <p class="font-family-primary fw-normal fs-6 lh-160 color-white opacity-70 text-center text-md-end m-0">
+                Privacy Policy, Terms & Conditions
+            </p>
+        </div>
+    </footer>
     <!-- go to top btn  -->
     <button class="fs-4 position-fixed myBtn" onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
     <!-- Bootstrap JS  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         crossorigin="anonymous"></script>
-       <!-- Custom JS -->
+    <!-- Custom JS -->
     <script src="./assets/js/index.js"></script>
 </body>
+
 </html>
